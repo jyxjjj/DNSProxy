@@ -4,8 +4,8 @@ Quadlet files for DNS Proxy.
 
 ## Description
 
-- If you are in China, use `src/China` to as `/`
-- If you are not in China, use `src/Global` to as `/`
+- If you are in China, use `./Quadlets/China` as `/`.
+- If you are not in China, use `./Quadlets/Global` as `/`.
 
 ## Usage
 
