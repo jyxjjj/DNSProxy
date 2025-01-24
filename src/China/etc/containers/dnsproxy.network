@@ -1,0 +1,12 @@
+[Unit]
+Description=DNSProxy Network
+
+[Network]
+DisableDNS=false
+Driver=bridge
+Gateway=10.53.0.1
+Subnet=10.53.0.0/24
+Internal=false
+IPAMDriver=host-local
+IPv6=false
+NetworkName=dnsproxy

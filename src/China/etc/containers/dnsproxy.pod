@@ -1,0 +1,11 @@
+[Unit]
+Description=DNSProxy Pod
+
+[Pod]
+Network=dnsproxy.network
+NetworkAlias=dnsproxy
+PodName=dnsproxy
+ServiceName=dnsproxy
+
+[Install]
+WantedBy=multi-user.target
