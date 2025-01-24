@@ -86,7 +86,7 @@ PublishPorts={InternetIPAddress}:53:53/udp
 
 - [AGPL-3.0-only](https://www.gnu.org/licenses/agpl-3.0.html)
 
-# Thanks to
+# Acknowledgements
 
 - [AdguardTeam/dnsproxy](https://github.com/AdguardTeam/dnsproxy)
 - [containers/podman](https://github.com/containers/podman)
