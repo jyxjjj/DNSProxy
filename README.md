@@ -1,7 +1,10 @@
-# DESMG Template Repository
+# DNS Proxy
 
-This repository is a [template](https://github.com/jyxjjj/Repo-Template) for the DESMG repositories.
+Quadlet files for DNS Proxy.
 
-It contains the basic structure and files that are necessary for a DESMG repository.
+# License
+- [AGPL-3.0-only](https://www.gnu.org/licenses/agpl-3.0.html).
 
-PLEASE EDIT THIS FILE TO REFLECT THE CONTENTS OF YOUR REPOSITORY.
+# Thanks to
+- [AdguardTeam/dnsproxy](https://github.com/AdguardTeam/dnsproxy).
+- [containers/podman](https://github.com/containers/podman).
