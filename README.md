@@ -51,7 +51,7 @@ The `Global`'s architecture is:
 ## Notice
 This Pod can only allow dns queries from `127.0.0.1`.
 
-Due to `SystemD-Resolved` already listening on `127.0.0.53:53`,
+Due to `SystemD-ResolveD` already listening on `127.0.0.53:53`,
 we didn't use `0.0.0.0` to publish the ports.
 
 ### Intranet Sharing
