@@ -67,6 +67,11 @@ PublishPorts={IntranetIPAddress}:53:53/udp
 
 ### Internet Sharing
 
+It is not recommended due to we won't implement things such as `DoH` or `DoT`,
+bacause it is hard to have a good cross-country network environment due to Gonvernment's policy.
+
+Such as `GFW` in China.
+
 If you want to share it to intranet,
 you should add overrides to main container file `dnsproxy.container` via `dnsproxy.container.d/01-intranet.conf`:
 
