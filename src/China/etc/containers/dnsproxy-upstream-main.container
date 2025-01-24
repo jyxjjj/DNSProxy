@@ -2,16 +2,15 @@
 Description=DNSProxy Container
 
 [Container]
-ContainerName=dnsproxy
+ContainerName=dnsproxy-upstream-main
 Image=docker.io/adguard/dnsproxy:v0.74.1
 Pull=never
 
 Timezone=Etc/GMT-8
 Environment=TZ=Etc/GMT-8
 
-Pod=dnsproxy.pod
-StartWithPod=true
-
+Network=dnsproxy.network
+NetworkAlias=dnsproxy-upstream-main
 HostName=dnsproxy-upstream-main
 IP=10.53.0.3
 
@@ -52,3 +51,6 @@ User=root
 Group=root
 Restart=always
 TimeoutStartSec=15
+
+[Install]
+WantedBy=multi-user.target

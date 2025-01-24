@@ -12,9 +12,8 @@ Environment=TZ=Etc/GMT-8
 PublishPort=127.0.0.1:53:53/tcp
 PublishPort=127.0.0.1:53:53/udp
 
-Pod=dnsproxy.pod
-StartWithPod=true
-
+Network=dnsproxy.network
+NetworkAlias=dnsproxy
 HostName=dnsproxy
 IP=10.53.0.2
 
@@ -55,3 +54,6 @@ User=root
 Group=root
 Restart=always
 TimeoutStartSec=15
+
+[Install]
+WantedBy=multi-user.target

@@ -2,16 +2,15 @@
 Description=DNSProxy Container
 
 [Container]
-ContainerName=dnsproxy
+ContainerName=dnsproxy-upstream-fallback-google
 Image=docker.io/adguard/dnsproxy:v0.74.1
 Pull=never
 
 Timezone=Etc/GMT-8
 Environment=TZ=Etc/GMT-8
 
-Pod=dnsproxy.pod
-StartWithPod=true
-
+Network=dnsproxy.network
+NetworkAlias=dnsproxy-upstream-fallback-google
 HostName=dnsproxy-upstream-fallback-google
 IP=10.53.0.6
 
@@ -52,3 +51,7 @@ User=root
 Group=root
 Restart=always
 TimeoutStartSec=15
+
+[Install]
+WantedBy=multi-user.target
+
